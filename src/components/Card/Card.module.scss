@@ -1,0 +1,46 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+.card {
+    position: relative;
+    background: $color-light;
+    border: 1px solid lighten($color-dark, 60%);
+    padding: $base-size;
+    margin: 0 0 $base-size 0;
+    border-radius: $radius;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.icon{
+    margin: 0;
+    padding: 0;
+}
+.iconContainer{
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+    width: 50px;
+}
+.buttonFavorite{
+    display: inline;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 20px;
+    height: 20px;
+}
+.buttonDelete{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+.active{
+    color: red;
+}
